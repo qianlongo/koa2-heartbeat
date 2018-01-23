@@ -1,0 +1,32 @@
+{
+  "name": "koa2-heartbeat",
+  "version": "1.0.0",
+  "description": "koa2 心跳检查中间件",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV='dev' nodemon ./test.js",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "validate": "npm ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianlongo/koa2-heartbeat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qianlongo/koa2-heartbeat/issues"
+  },
+  "homepage": "https://github.com/qianlongo/koa2-heartbeat#readme",
+  "devDependencies": {
+    "koa": "^2.4.1",
+    "nodemon": "^1.14.8",
+    "precommit-hook": "^3.0.0",
+    "standard": "^10.0.3"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
