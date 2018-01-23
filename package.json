@@ -1,6 +1,6 @@
 {
   "name": "koa2-heartbeat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "koa2 心跳检查中间件",
   "main": "index.js",
   "scripts": {
