@@ -22,12 +22,14 @@
 ``` javascript
 
 const Koa = require('koa')
-const heartBeat = require('./index')
+const heartbeat = require('koa2-heartbeat')
 const app = new Koa()
 const PORT = 3000
 
-app.use(heartBeat()) // 默认用法
-app.use(heartBeat(/^\/health\/check/, 'health check passed !!!')) // 添加自己的规则
+// 1. 默认用法
+app.use(heartBeat())
+// 2. 添加自己的规则
+app.use(heartBeat(/^\/health\/check/, 'health check passed !!!'))
 
 app.listen(PORT, () => {
   console.log(`app start at: ${PORT}`)
