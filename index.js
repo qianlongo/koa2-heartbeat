@@ -1,4 +1,4 @@
-const heartBeatReg = /^\/heart_check/
+const heartBeatReg = /^\/heart\/check/
 const heartBeatMsg = 'heart check passed !!!'
 
 module.exports = (beatReg = heartBeatReg, beatMsg = heartBeatMsg) => {
