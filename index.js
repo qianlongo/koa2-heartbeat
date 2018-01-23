@@ -1,5 +1,5 @@
 const heartBeatReg = /^\/heart_check/
-const heartBeatMsg = 'heart_check pass !!!'
+const heartBeatMsg = 'heart check passed !!!'
 
 module.exports = (beatReg = heartBeatReg, beatMsg = heartBeatMsg) => {
   return async (ctx, next) => {
