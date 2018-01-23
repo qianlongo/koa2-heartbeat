@@ -1,7 +1,7 @@
-const healthBeatReg = /^\/heath_check/
-const healthBeatMsg = 'heath_check'
+const heartBeatReg = /^\/heart_check/
+const heartBeatMsg = 'heart_check pass !!!'
 
-module.exports = (beatReg = healthBeatReg, beatMsg = healthBeatMsg) => {
+module.exports = (beatReg = heartBeatReg, beatMsg = heartBeatMsg) => {
   return async (ctx, next) => {
     return beatReg.test(ctx.path) ? (ctx.body = beatMsg) : next()
   }
